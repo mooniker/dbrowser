@@ -12,3 +12,5 @@ cd dbrowser
 npm start
 # and point your web browser to `http://localhost:8000/` to enter in a ZIP code.
 ```
+
+or try the live version on Github Pages: [`https://mooniker.github.io/dbrowser/app/`](https://mooniker.github.io/dbrowser/app/)
