@@ -1,0 +1,89 @@
+<h3>{{$ctrl.provider[0].provider_name}}</h3>
+<table>
+    <tr>
+        <th>correction date</th>
+        <th>description</th>
+        <th>address</th>
+        <!--<th>city</th>-->
+        <!--<th>state</th>-->
+        <!--<th>zip</th>-->
+        <th>survey</th>
+    </tr>
+  <tr ng-repeat="def in $ctrl.provider">
+    <td>{{def.correction_date | date:"MM/dd/yyyy"}}</td>
+    <td>{{def.deficiency_description}} ({{def.deficiency_prefix}}/{{def.deficiency_tag_number}})</td>
+    <td>{{def.location_address}}</td>
+    <!--<td>{{def.location_city}}</td>-->
+    <!--<td>{{def.location_state}}</td>-->
+    <!--<td>{{def.location_zip}}</td>-->
+    <td>{{def.survey_type}}</td>
+  </tr>
+</table>
+<!--
+true
+correction_date
+:
+"2015-03-26T00:00:00.000"
+deficiency_corrected
+:
+"Deficient, Provider has date of correction"
+deficiency_description
+:
+"Provide medically-related social services to help each resident achieve the highest possible quality of life."
+deficiency_prefix
+:
+"F"
+deficiency_tag_number
+:
+"0250"
+federal_provider_number
+:
+"215187"
+inspection_cycle
+:
+"2"
+location
+:
+Object
+location_address
+:
+"5721 GROSVENOR LANE"
+location_city
+:
+"BETHESDA"
+location_state
+:
+"MD"
+location_zip
+:
+"20814"
+processing_date
+:
+"2016-08-01T00:00:00.000"
+provider_address
+:
+"5721 GROSVENOR LANE"
+provider_city
+:
+"BETHESDA"
+provider_name
+:
+"BETHESDA HEALTH AND REHABILITATION"
+provider_state
+:
+"MD"
+provider_zip_code
+:
+"20814"
+scope_severity_code
+:
+"C"
+standard_deficiency
+:
+true
+survey_date
+:
+"2015-01-26T00:00:00.000"
+survey_type
+:
+"Health"-->
